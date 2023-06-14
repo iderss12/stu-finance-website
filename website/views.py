@@ -5,7 +5,7 @@ views = Blueprint("views", __name__)
 
 @views.route("/", methods=["GET"])
 def toIndex():
-    return redirect(url_for("views.index", lang="en"))
+    return redirect(url_for("views.index", lang="mn"))
 
 
 @views.route("/<lang>/index.html", methods=["GET"])
