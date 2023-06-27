@@ -26,6 +26,48 @@
     <link rel="stylesheet" href="assets/css/style.css" />
     <title>Эс Ти Юу финанс</title>
     <link rel="icon" href="assets/img/stulogoTrans.png" />
+    <style>
+      .dropbtn {
+        background-color: transparent;
+        color: white;
+        padding: 14px;
+        font-size: 14px;
+        border: none;
+      }
+
+      .dropdown {
+        position: relative;
+        display: inline-block;
+      }
+
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f1f1f1;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+      }
+
+      .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+      }
+
+      .dropdown-content a:hover {
+        background-color: #ddd;
+      }
+
+      .dropdown:hover .dropdown-content {
+        display: block;
+      }
+
+      .dropdown:hover .dropbtn {
+        background-color: transparent;
+      }
+    </style>
   </head>
 
   <body data-spy="scroll" data-target=".navbar">
@@ -85,8 +127,16 @@
                   >Холбоо барих</a
                 >
               </div>
+              <div class="dropdown">
+                <button class="dropbtn">MN</button>
+                <div class="dropdown-content">
+                  <a href="/en/index.html">EN</a>
+                  <a href="/ru/index.html">RU</a>
+                </div>
+              </div>
               <!--end navbar-nav-->
             </div>
+
             <!--end collapse-->
           </div>
           <!--end container-->
@@ -606,8 +656,7 @@
               marginheight="0"
               marginwidth="0"
               src="https://maps.google.com/maps?width=1200&amp;height=400&amp;hl=en&amp;q=stu solution&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
-            ></iframe
-            ><a href="https://gachanox.io/">Gacha Nox</a>
+            ></iframe>
           </div>
           <style>
             .mapouter {
@@ -773,5 +822,6 @@
     <script src="assets/js/jquery.validate.min.js"></script>
     <script src="assets/js/jquery-validate.bootstrap-tooltip.min.js"></script>
     <script src="assets/js/custom.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
   </body>
 </html>

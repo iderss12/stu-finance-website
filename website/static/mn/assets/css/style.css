@@ -2464,3 +2464,35 @@ E. Template Specific Elements
     left: 2.5rem;
   }
 }
+#language-changer1 {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background-color: transparent;
+}
+
+#language-select1 {
+  padding: 5px;
+  font-size: 14px;
+  color: #f1f1f1;
+  background-color: transparent;
+  border: none;
+}
+#language-changer {
+  position: relative;
+  display: inline-block;
+}
+
+#language-select {
+  padding: 8px;
+  font-size: 14px;
+  color: white;
+  background-color: #333;
+  border: none;
+  border-radius: 4px;
+}
+
+#language-select option {
+  background-color: #333;
+  color: white;
+}
