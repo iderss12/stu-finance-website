@@ -19,12 +19,55 @@
     />
     <link
       rel="stylesheet"
-      href="assets/font-awesome/css/fontawesome-all.min.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
     <link rel="stylesheet" href="assets/css/magnific-popup.css" />
     <link rel="stylesheet" href="assets/css/owl.carousel.min.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
-    <title>FinWin - One Page Business Template</title>
+    <title>STU Finance</title>
+    <link rel="icon" href="assets/img/stulogoTrans.png" />
+    <style>
+      .dropbtn {
+        background-color: transparent;
+        color: white;
+        padding: 14px;
+        font-size: 14px;
+        border: none;
+      }
+
+      .dropdown {
+        position: relative;
+        display: inline-block;
+      }
+
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f1f1f1;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+      }
+
+      .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+      }
+
+      .dropdown-content a:hover {
+        background-color: #ddd;
+      }
+
+      .dropdown:hover .dropdown-content {
+        display: block;
+      }
+
+      .dropdown:hover .dropbtn {
+        background-color: transparent;
+      }
+    </style>
   </head>
 
   <body data-spy="scroll" data-target=".navbar">
@@ -43,7 +86,7 @@
         >
           <div class="container">
             <a class="navbar-brand" href="#page-top">
-              <img src="assets/img/logo-w.png" alt="" />
+              <img src="assets/img/STU_Finance_Logo.png" alt="" />
             </a>
             <!--end navbar-brand-->
             <button
@@ -65,26 +108,13 @@
               <div class="navbar-nav ml-auto">
                 <a
                   class="nav-item nav-link active ts-scroll"
-                  href="#page-top"
-                  >Home <span class="sr-only">(current)</span></a
-                >
-                <a
-                  class="nav-item nav-link ts-scroll"
                   href="#how-it-works"
-                  >How It Works</a
+                  >Service<span class="sr-only">(current)</span></a
                 >
                 <a
                   class="nav-item nav-link ts-scroll"
                   href="#about-us"
-                  >About Us</a
-                >
-                <a
-                  class="nav-item nav-link ts-scroll"
-                  href="#successful-stories"
-                  >Cases</a
-                >
-                <a class="nav-item nav-link ts-scroll" href="#pricing"
-                  >Pricing</a
+                  >About us</a
                 >
                 <a
                   class="nav-item nav-link ts-scroll"
@@ -96,14 +126,17 @@
                   href="#form-contact"
                   >Contact</a
                 >
-                <a
-                  class="ts-scroll btn btn-primary btn-sm m-1 px-3 ts-width__auto"
-                  href="#form-contact"
-                  >Get a Quote</a
-                >
+              </div>
+              <div class="dropdown">
+                <button class="dropbtn">EN</button>
+                <div class="dropdown-content">
+                  <a href="/mn/index.html">MN</a>
+                  <a href="/ru/index.html">RU</a>
+                </div>
               </div>
               <!--end navbar-nav-->
             </div>
+
             <!--end collapse-->
           </div>
           <!--end container-->
@@ -115,32 +148,24 @@
           <div class="row">
             <div class="col-md-7">
               <h1 data-animate="ts-fadeInUp">
-                Grow Your Business With Us
+                INTERNATIONAL REMITTANCE
               </h1>
               <div data-animate="ts-fadeInUp" data-delay=".1s">
-                <p class="w-75 text-white mb-5 ts-opacity__50">
-                  Morbi et nisl a sapien malesuada scelerisque.
-                  Suspendisse tempor turpis mattis
+                <p class="w-75 text-white mb-5 ts-opacity__60">
+                  Effortlessly send money to your loved ones around
+                  the world
                 </p>
               </div>
               <a
-                href="#how-it-works"
+                href="#form-contact"
                 class="btn btn-primary btn-lg ts-scroll mr-4"
                 data-animate="ts-fadeInUp"
                 data-delay=".2s"
               >
-                Learn More
+                Contact
                 <i
                   class="fa fa-arrow-right small ml-3 ts-opacity__50"
                 ></i>
-              </a>
-              <a
-                href="#form-contact"
-                class="btn-link text-white d-inline-block"
-                data-animate="ts-fadeInUp"
-                data-delay=".3s"
-              >
-                <strong>Get a Quote</strong>
               </a>
             </div>
             <!--end col-md-7-->
@@ -164,7 +189,7 @@
           ></div>
           <div
             class="ts-background-image ts-parallax-element"
-            data-bg-image="assets/img/bg-man-sitting.jpg"
+            data-bg-image="assets/img/sliderImage4.jpg"
             data-animate="ts-zoomOutIn"
           ></div>
         </div>
@@ -183,7 +208,7 @@
         >
           <div class="container">
             <div class="ts-title">
-              <h2>How It Works</h2>
+              <h2>Service</h2>
             </div>
             <!--end ts-title-->
             <div class="row">
@@ -200,7 +225,8 @@
                           data-bg-color="#ebf1fe"
                         >
                           <img
-                            src="assets/img/icon-bubble.png"
+                            src="assets/img/icon-secure.png"
+                            height="50px"
                             alt=""
                           />
                         </div>
@@ -209,10 +235,11 @@
                     </div>
                     <!--end ts-item-header-->
                     <div class="ts-item-body">
-                      <h4>Free Consultation</h4>
+                      <h4>Secure Money Transfers</h4>
                       <p>
-                        Morbi et nisl a sapien malesuada scelerisque.
-                        Suspendisse tempor turpis mattis
+                        Send money securely and quickly to over X
+                        countries. Enjoy competitive exchange rates
+                        and low fees.
                       </p>
                     </div>
                     <!--end ts-item-body-->
@@ -239,7 +266,8 @@
                           data-bg-color="#ebf1fe"
                         >
                           <img
-                            src="assets/img/icon-knobs.png"
+                            src="assets/img/icon-fee.png"
+                            height="50px"
                             alt=""
                           />
                         </div>
@@ -248,10 +276,10 @@
                     </div>
                     <!--end ts-item-header-->
                     <div class="ts-item-body">
-                      <h4>Your Finance Plan</h4>
+                      <h4>Convenient Payment Methods</h4>
                       <p>
-                        Suspendisse eget semper justo, a laoreet
-                        sapien. Ut a est vitae
+                        Choose from various payment options, including
+                        bank transfers, mobile wallets, and more.
                       </p>
                     </div>
                     <!--end ts-item-body-->
@@ -280,7 +308,8 @@
                           data-bg-color="#ebf1fe"
                         >
                           <img
-                            src="assets/img/icon-heart.png"
+                            src="assets/img/icon-tracking.png"
+                            height="50px"
                             alt=""
                           />
                         </div>
@@ -289,10 +318,11 @@
                     </div>
                     <!--end ts-item-header-->
                     <div class="ts-item-body">
-                      <h4>Enjoy the Freedom</h4>
+                      <h4>Transparent Tracking</h4>
                       <p>
-                        In non turpis convallis nunc fermentum
-                        porttitor sed quis sapien. Etiam et neque
+                        Stay informed with real-time transaction
+                        tracking. Know exactly where your money is at
+                        all times.
                       </p>
                     </div>
                     <!--end ts-item-body-->
@@ -316,25 +346,50 @@
           <!--container-->
           <div class="container">
             <!--block of logos-->
-            <div
+            <!-- <div
               class="d-block d-md-flex justify-content-between align-items-center text-center ts-partners py-3"
             >
               <a href="#">
-                <img src="assets/img/logo-01.png" alt="" />
+                <img
+                  height="80px"
+                  width="140px"
+                  src="assets/img/brand/tamgiinGazar.jpg"
+                  alt=""
+                />
               </a>
               <a href="#">
-                <img src="assets/img/logo-02.png" alt="" />
+                <img
+                  height="80px"
+                  width="140px"
+                  src="assets/img/brand/hilhamgaalah.jpg"
+                  alt=""
+                />
               </a>
               <a href="#">
-                <img src="assets/img/logo-03.png" alt="" />
+                <img
+                  height="80px"
+                  width="140px"
+                  src="assets/img/brand/ayulguiBaidal.jpg"
+                  alt=""
+                />
               </a>
               <a href="#">
-                <img src="assets/img/logo-04.png" alt="" />
+                <img
+                  height="80px"
+                  width="140px"
+                  src="assets/img/brand/immigration.jpg"
+                  alt=""
+                />
               </a>
               <a href="#">
-                <img src="assets/img/logo-05.png" alt="" />
+                <img
+                  height="80px"
+                  width="140px"
+                  src="assets/img/brand/hosut.jpg"
+                  alt=""
+                />
               </a>
-            </div>
+            </div> -->
             <!--end logos-->
           </div>
           <!--end container-->
@@ -348,14 +403,14 @@
               <div class="col-sm-6">
                 <div class="ts-block pr-3">
                   <div class="ts-title">
-                    <h2>About Us</h2>
+                    <h2>About us</h2>
                   </div>
                   <!--end ts-title-->
                   <p>
-                    Vivamus fermentum magna non faucibus dignissim.
-                    Sed a venenatis mi, vel tempus neque. Fusce
-                    pharetra, diam in hendrerit facilisis, enim diam
-                    cursus augue.
+                    It's is secure remittance service designed for
+                    Mongolians living throughout the world and it
+                    offers a safe, fast and affordable remittance
+                    service for all your needs.
                   </p>
                   <div class="list-group list-group-flush mb-5">
                     <a
@@ -365,15 +420,13 @@
                       role="button"
                       aria-expanded="false"
                       aria-controls="collapseOne"
-                      >Our Mission</a
+                      >Mission</a
                     >
                     <div class="collapse" id="collapseOne">
                       <p class="pt-3 small">
-                        Anim pariatur cliche reprehenderit, enim
-                        eiusmod high life accusamus terry richardson
-                        ad squid. Nihil anim keffiyeh helvetica, craft
-                        beer labore wes anderson cred nesciunt
-                        sapiente ea proident.
+                        We will offer the cheapest and fastest
+                        solution to all the money transfer problems of
+                        Mongolian citizens all over the world.
                       </p>
                     </div>
                     <a
@@ -383,15 +436,13 @@
                       role="button"
                       aria-expanded="false"
                       aria-controls="collapseTwo"
-                      >We Love Our Clients</a
+                      >Vision</a
                     >
                     <div class="collapse" id="collapseTwo">
                       <p class="pt-3 small">
-                        Anim pariatur cliche reprehenderit, enim
-                        eiusmod high life accusamus terry richardson
-                        ad squid. Nihil anim keffiyeh helvetica, craft
-                        beer labore wes anderson cred nesciunt
-                        sapiente ea proident.
+                        It is an internationally competitive money
+                        transfer company that has contributed to the
+                        rapid development of Mongolia
                       </p>
                     </div>
                     <a
@@ -401,26 +452,22 @@
                       role="button"
                       aria-expanded="false"
                       aria-controls="collapseThree"
-                      >Awards and Wins</a
+                      >Value</a
                     >
                     <div class="collapse" id="collapseThree">
                       <p class="pt-3 small">
-                        Anim pariatur cliche reprehenderit, enim
-                        eiusmod high life accusamus terry richardson
-                        ad squid. Nihil anim keffiyeh helvetica, craft
-                        beer labore wes anderson cred nesciunt
-                        sapiente ea proident.
+                        Comprehensive Remittance Program with Skilled
+                        Staff, Reliable Fast Service, Seamless
+                        Operations.
                       </p>
                     </div>
                   </div>
-                  <a href="#" class="btn btn-primary mr-3 my-2"
-                    >Contact Us</a
-                  >
+                  <!--<a href="#" class="btn btn-primary mr-3 my-2">Contact Us</a>
                   <a
                     href="#"
                     class="btn btn-outline-dark ts-btn-border-muted my-2"
                     >Get a Quote</a
-                  >
+                  >-->
                 </div>
               </div>
               <!--end col-md-6-->
@@ -442,11 +489,7 @@
             >
               <div
                 class="ts-background-image"
-                data-bg-image="assets/img/bg-finance-team.jpg"
-              ></div>
-              <div
-                class="ts-background-image"
-                data-bg-image="assets/img/bg-hand-mobile.jpg"
+                data-bg-image="assets/img/sliderImage2.png"
               ></div>
             </div>
             <!--end owl-carousel-->
@@ -455,543 +498,11 @@
         </section>
         <!--END ABOUT US ****************************************************************************************-->
 
-        <!--NUMBERS *********************************************************************************************-->
-        <section
-          id="numbers"
-          class="ts-block ts-background-is-dark ts-separate-bg-element py-5 ts-xs-text-center"
-          data-bg-image="assets/img/bg-mountain.jpg"
-          data-bg-image-opacity=".1"
-          data-bg-color="#0e1e3d"
-          data-bg-parallax="scroll"
-          data-bg-parallax-speed="3"
-        >
-          <div class="container">
-            <div class="ts-promo-numbers py-5">
-              <div class="row">
-                <div class="col-sm-6 col-md-3">
-                  <div class="ts-promo-number">
-                    <h2 class="ts-opacity__50">140+</h2>
-                    <h5 class="mb-0">Happy Clients</h5>
-                  </div>
-                  <!--end ts-promo-number-->
-                </div>
-                <!--end col-sm-3-->
-                <div class="col-sm-6 col-md-3">
-                  <div class="ts-promo-number">
-                    <h2 class="ts-opacity__50">280+</h2>
-                    <h5 class="mb-0">Cases Done</h5>
-                  </div>
-                  <!--end ts-promo-number-->
-                </div>
-                <!--end col-sm-3-->
-                <div class="col-sm-6 col-md-3">
-                  <div class="ts-promo-number">
-                    <h2 class="ts-opacity__50">24+</h2>
-                    <h5 class="mb-0">Years Experience</h5>
-                  </div>
-                  <!--end ts-promo-number-->
-                </div>
-                <!--end col-sm-3-->
-                <div class="col-sm-6 col-md-3">
-                  <div class="ts-promo-number">
-                    <h2 class="ts-opacity__50">18</h2>
-                    <h5 class="mb-0">Branches Worldwide</h5>
-                  </div>
-                  <!--end ts-promo-number-->
-                </div>
-                <!--end col-sm-3-->
-              </div>
-              <!--end row-->
-            </div>
-            <!--end ts-promo-numbers-->
-          </div>
-          <!--end container-->
-        </section>
-        <!--END NUMBERS *****************************************************************************************-->
-
-        <!--SUCCESSFUL STORIES **********************************************************************************-->
-        <section id="successful-stories" class="ts-block pb-5 mb-4">
-          <div class="container">
-            <div class="ts-title text-center">
-              <h2>Successful Stories</h2>
-            </div>
-            <!--end ts-title-->
-            <div class="row">
-              <div class="col-md-4">
-                <div
-                  class="ts-story ts-separate-bg-element"
-                  data-animate="ts-fadeInUp"
-                  data-bg-color="rgba(0,0,0,.05)"
-                  data-bg-image="assets/img/img-bw-man-phone.jpg"
-                  data-bg-image-opacity=".1"
-                >
-                  <figure>10.05.2018</figure>
-                  <h3>Peters & Partners 50% Growth</h3>
-                  <p>
-                    Morbi et nisl a sapien malesuada scelerisque.
-                    Suspendisse tempor
-                  </p>
-                  <a href="#" class="btn btn-primary btn-sm"
-                    >View Case</a
-                  >
-                </div>
-                <!--end ts-story-->
-              </div>
-              <!--end col-md-4-->
-              <div class="col-md-4">
-                <div
-                  class="ts-story ts-separate-bg-element"
-                  data-animate="ts-fadeInUp"
-                  data-delay="0.1s"
-                  data-bg-color="rgba(0,0,0,.05)"
-                  data-bg-image="assets/img/img-bw-food.jpg"
-                  data-bg-image-opacity=".1"
-                >
-                  <figure>23.04.2018</figure>
-                  <h3>Fishnet Restaurant Redesign</h3>
-                  <p>
-                    Donec et magna velit. Aenean volutpat consequat
-                    feugiat. Mauris
-                  </p>
-                  <a href="#" class="btn btn-primary btn-sm"
-                    >View Case</a
-                  >
-                </div>
-                <!--end ts-story-->
-              </div>
-              <!--end col-md-4-->
-              <div class="col-md-4">
-                <div
-                  class="ts-story ts-separate-bg-element"
-                  data-animate="ts-fadeInUp"
-                  data-delay="0.2s"
-                  data-bg-color="rgba(0,0,0,.05)"
-                  data-bg-image="assets/img/img-bw-student-drawing.jpg"
-                  data-bg-image-opacity=".1"
-                >
-                  <figure>12.03.2018</figure>
-                  <h3>EyeSight Startup Successful Funding</h3>
-                  <p>
-                    Integer eleifend diam eu diam sollicitudin
-                    pharetra. Donec pulvinar
-                  </p>
-                  <a href="#" class="btn btn-primary btn-sm"
-                    >View Case</a
-                  >
-                </div>
-                <!--end ts-story-->
-              </div>
-              <!--end col-md-4-->
-            </div>
-            <!--end row-->
-            <div class="my-5 text-center">
-              <a
-                href="#"
-                class="btn btn-outline-primary border-0"
-                data-bg-color="#ebf1fe"
-                >Load More</a
-              >
-            </div>
-          </div>
-          <!--end container-->
-        </section>
-        <!--END SUCCESSFUL STORIES ******************************************************************************-->
-
-        <!--TIMELINE ********************************************************************************************-->
-        <section
-          id="our-life-sotry"
-          class="ts-block ts-separate-bg-element ts-background-repeat"
-          data-bg-image-opacity=".1"
-          data-bg-image="assets/img/bg-pattern-dot.png"
-        >
-          <div class="text-center ts-title">
-            <h2>Our Life Story</h2>
-          </div>
-          <!--end ts-title-->
-          <div class="ts-time-line__horizontal">
-            <ul
-              class="pt-5 owl-carousel"
-              data-owl-items="99"
-              data-owl-auto-width="1"
-            >
-              <li class="ts-time-line__item ts-time-line__milestone">
-                <div class="ts-box">
-                  <h5>Company Founded</h5>
-                </div>
-                <!--end ts-box-->
-                <figure>
-                  <small>Sep</small>
-                  <h6>2016</h6>
-                </figure>
-                <!--end date-->
-              </li>
-
-              <li class="ts-time-line__item">
-                <div class="ts-box">
-                  <h5>Solution for slow money transfers</h5>
-                  <p>
-                    Phasellus in iaculis ante. Fusce odio justo,
-                    pulvinar sit amet nisl sed, lacinia laoreet augue.
-                    Integer eu ultrices lacus, at laoreet
-                  </p>
-                  <a href="#" class="btn btn-dark btn-sm"
-                    >Read More</a
-                  >
-                </div>
-                <!--end ts-box-->
-                <figure>
-                  <small>Mar</small>
-                  <h6>2017</h6>
-                </figure>
-                <!--end date-->
-              </li>
-
-              <li class="ts-time-line__item">
-                <div class="ts-box">
-                  <h5>Funding campaign launched</h5>
-                  <p>
-                    Phasellus in iaculis ante. Fusce odio justo,
-                    pulvinar sit amet nisl
-                  </p>
-                  <a href="#" class="btn btn-dark btn-sm"
-                    >Read More</a
-                  >
-                </div>
-                <!--end ts-box-->
-                <figure>
-                  <small>Apr</small>
-                  <h6>2017</h6>
-                </figure>
-                <!--end date-->
-              </li>
-
-              <li class="ts-time-line__item ts-time-line__milestone">
-                <div class="ts-box">
-                  <h5>Funded $300,000</h5>
-                </div>
-                <!--end ts-box-->
-                <figure>
-                  <small>Jun</small>
-                  <h6>2017</h6>
-                </figure>
-                <!--end date-->
-              </li>
-
-              <li class="ts-time-line__item">
-                <div class="ts-box">
-                  <h5>Development started with 10 team members</h5>
-                  <p>
-                    Pulvinar sit amet nisl sed, lacinia laoreet augue.
-                    Integer eu ultrices lacus, at laoreet nunc.
-                  </p>
-                  <a href="#" class="btn btn-dark btn-sm"
-                    >Read More</a
-                  >
-                </div>
-                <!--end ts-box-->
-                <figure>
-                  <small>Jul</small>
-                  <h6>2017</h6>
-                </figure>
-                <!--end date-->
-              </li>
-
-              <li class="ts-time-line__item">
-                <div class="ts-box">
-                  <h5>Next 8 developers join our team</h5>
-                  <p>
-                    Integer eu ultrices lacus, at laoreet nunc. In
-                    tincidunt
-                  </p>
-                  <a href="#" class="btn btn-dark btn-sm"
-                    >Read More</a
-                  >
-                </div>
-                <!--end ts-box-->
-                <figure>
-                  <small>Aug</small>
-                  <h6>2017</h6>
-                </figure>
-                <!--end date-->
-              </li>
-
-              <li class="ts-time-line__item">
-                <div class="ts-box">
-                  <h5>First Prototype is here</h5>
-                  <p>
-                    Integer eu ultrices lacus, at laoreet nunc. In
-                    tincidunt nisi lorem, eu tempor ligula pulvinar
-                    at.
-                  </p>
-                  <a href="#" class="btn btn-dark btn-sm"
-                    >Read More</a
-                  >
-                </div>
-                <!--end ts-box-->
-                <figure>
-                  <small>Oct</small>
-                  <h6>2017</h6>
-                </figure>
-                <!--end date-->
-              </li>
-
-              <li class="ts-time-line__item">
-                <div class="ts-box">
-                  <h5>Solution for slow money transfers</h5>
-                  <p>
-                    Phasellus in iaculis ante. Fusce odio justo,
-                    pulvinar sit amet nisl sed, lacinia laoreet augue.
-                    Integer eu ultrices lacus, at laoreet
-                  </p>
-                  <a href="#" class="btn btn-dark btn-sm"
-                    >Read More</a
-                  >
-                </div>
-                <!--end ts-box-->
-                <figure>
-                  <small>Nov</small>
-                  <h6>2017</h6>
-                </figure>
-                <!--end date-->
-              </li>
-            </ul>
-          </div>
-          <!--end ts-timeline__horizontal-->
-        </section>
-        <!--END TIMELINE ****************************************************************************************-->
-
-        <!--PRICING *********************************************************************************************-->
-        <section
-          id="pricing"
-          class="ts-block"
-          data-bg-color="#f7f7f7"
-        >
-          <div class="container">
-            <div class="ts-title text-center">
-              <h2>Affordable Prices</h2>
-            </div>
-            <!--end ts-title-->
-            <div class="row no-gutters ts-cards-same-height">
-              <!--Price Box-->
-              <div class="col-sm-4 col-lg-4">
-                <div
-                  class="card text-center ts-price-box"
-                  data-animate="ts-fadeInUp"
-                >
-                  <div class="card-header p-0">
-                    <h5
-                      class="mb-0 py-3 text-white"
-                      data-bg-color="#1b3874"
-                    >
-                      Basic
-                    </h5>
-                    <div class="ts-title py-5 mb-0">
-                      <h3 class="mb-0 font-weight-normal">Free</h3>
-                      <small class="ts-opacity__50">forever</small>
-                    </div>
-                  </div>
-                  <!--end card-header-->
-                  <div class="card-body p-0">
-                    <ul class="list-unstyled ts-list-divided">
-                      <li>1 hour Consultation</li>
-                      <li>3x Email Consultation</li>
-                      <li>
-                        <s class="ts-opacity__50">Live Support</s>
-                      </li>
-                      <li>
-                        <s class="ts-opacity__50">Priority Hotline</s>
-                      </li>
-                    </ul>
-                    <!--end list-->
-                  </div>
-                  <!--end card-body-->
-                  <div
-                    class="card-footer bg-transparent pt-0 ts-border-none"
-                  >
-                    <a
-                      href="#"
-                      class="btn btn-outline-dark ts-btn-border-muted"
-                      >Select Now</a
-                    >
-                  </div>
-                </div>
-                <!--end card-->
-              </div>
-              <!--end price-box col-md-4-->
-
-              <!--Price Box Promoted-->
-              <div class="col-sm-4 col-lg-4">
-                <div
-                  class="card text-center ts-price-box ts-price-box__promoted"
-                  data-animate="ts-fadeInUp"
-                  data-delay="0.1s"
-                >
-                  <div
-                    class="card-header p-0"
-                    data-bg-color="#346de0"
-                  >
-                    <h5
-                      class="mb-0 py-3 text-white"
-                      data-bg-color="#3a79f9"
-                    >
-                      Premium
-                    </h5>
-                    <div class="ts-title text-white py-5 mb-0">
-                      <h3 class="mb-0 font-weight-normal">
-                        <sup>$</sup>9,99
-                      </h3>
-                      <small class="ts-opacity__50">per month</small>
-                    </div>
-                  </div>
-                  <!--end card-header-->
-                  <div class="card-body p-0">
-                    <ul class="list-unstyled ts-list-divided">
-                      <li>16 Hours Consultation</li>
-                      <li>24 Emails Support</li>
-                      <li>4 Hours Email Support</li>
-                      <li>
-                        <s class="ts-opacity__50">Priority Hotline</s>
-                      </li>
-                    </ul>
-                    <!--end list-->
-                  </div>
-                  <!--end card-body-->
-                  <div
-                    class="card-footer bg-transparent pt-0 ts-border-none"
-                  >
-                    <a href="#" class="btn btn-primary">Select Now</a>
-                  </div>
-                </div>
-                <!--end card-->
-              </div>
-              <!--end price-box col-md-4-->
-
-              <!--Price Box-->
-              <div class="col-sm-4 col-lg-4">
-                <div
-                  class="card text-center ts-price-box"
-                  data-animate="ts-fadeInUp"
-                  data-delay="0.2s"
-                >
-                  <div class="card-header p-0">
-                    <h5
-                      class="mb-0 py-3 text-white"
-                      data-bg-color="#1b3874"
-                    >
-                      Premium
-                    </h5>
-                    <div class="ts-title py-5 mb-0">
-                      <h3 class="mb-0 font-weight-normal">
-                        <sup>$</sup>19,99
-                      </h3>
-                      <small class="ts-opacity__50">per month</small>
-                    </div>
-                  </div>
-                  <!--end card-header-->
-                  <div class="card-body p-0">
-                    <ul class="list-unstyled ts-list-divided">
-                      <li>Unlimited Consultation</li>
-                      <li>Unlimited Email Support</li>
-                      <li>Unlimited Live Support</li>
-                      <li>Priority Hotline</li>
-                    </ul>
-                    <!--end list-->
-                  </div>
-                  <!--end card-body-->
-                  <div
-                    class="card-footer bg-transparent pt-0 ts-border-none"
-                  >
-                    <a
-                      href="#"
-                      class="btn btn-outline-dark ts-btn-border-muted"
-                      >Select Now</a
-                    >
-                  </div>
-                </div>
-                <!--end card-->
-              </div>
-              <!--end price-box col-md-4-->
-            </div>
-            <!--end row-->
-          </div>
-          <!--end container-->
-        </section>
-        <!--END PRICING *****************************************************************************************-->
-
-        <section class="text-center my-5 py-5">
-          <div content="ts-title mb-5">
-            <h3 class="mb-1">Not Satisfied With The Prices?</h3>
-            <h5 class="font-weight-normal ts-opacity__50 mb-5">
-              Individual consultation is right for you
-            </h5>
-          </div>
-          <a
-            href="#"
-            class="btn btn-outline-primary btn-lg border-0"
-            data-bg-color="#ebf1fe"
-            >Ask for Individual Consultation</a
-          >
-        </section>
-
-        <!--SUBSCRIBE *******************************************************************************************-->
-        <section
-          id="subscribe"
-          class="ts-block ts-separate-bg-element ts-background-repeat py-5"
-          data-bg-image="assets/img/pattern-topo.png"
-          data-bg-image-opacity=".05"
-          data-bg-color="#ecf2fe"
-        >
-          <div class="container py-5">
-            <div class="offset-lg-1 col-lg-10">
-              <h3>Subscribe For The Latest News!</h3>
-              <form
-                class="ts-form ts-form-email"
-                data-php-path="assets/php/email.php"
-              >
-                <div class="row">
-                  <div class="col-md-10">
-                    <div class="form-group mb-0">
-                      <input
-                        type="email"
-                        class="form-control ts-border-radius__pill"
-                        id="email-subscribe"
-                        aria-describedby="subscribe"
-                        name="email"
-                        placeholder="Email Address"
-                        required
-                      />
-                      <small class="form-text mt-2 ts-opacity__50"
-                        >*You’ll get only relevant news once a
-                        week</small
-                      >
-                    </div>
-                    <!--end form-group-->
-                  </div>
-                  <!--end col-md-10-->
-                  <div class="col-md-2">
-                    <button
-                      type="submit"
-                      class="btn btn-primary w-100"
-                    >
-                      Submit
-                    </button>
-                  </div>
-                  <!--end col-md-2-->
-                </div>
-                <!--end row-->
-              </form>
-              <!--end ts-form-->
-            </div>
-          </div>
-          <!--end container-->
-        </section>
-        <!--END SUBSCRIBE ***************************************************************************************-->
-
         <!--OUR TEAM ********************************************************************************************-->
         <section id="our-team" class="ts-block">
           <div class="container">
             <div class="ts-title">
-              <h2>Our Team</h2>
+              <h2>Our team</h2>
             </div>
             <!--end ts-title-->
             <div class="row">
@@ -1000,14 +511,14 @@
                   <div class="ts-card__image ts-img-into-bg">
                     <img
                       class="card-img-top"
-                      src="assets/img/person-01.jpg"
+                      src="assets/img/team/portraits/TA.png"
                       alt="Card image cap"
                     />
                   </div>
                   <!--end ts-card__image-->
                   <div class="card-body">
-                    <h5 class="mb-1">Anita Matthews</h5>
-                    <h6 class="ts-opacity__50">Company CEO</h6>
+                    <h5 class="mb-1">Tamirsaikhan Gantumur</h5>
+                    <h6 class="ts-opacity__50">Founder & CEO</h6>
                   </div>
                   <!--end card-body-->
                   <div class="card-footer bg-white">
@@ -1034,15 +545,13 @@
                   <div class="ts-card__image ts-img-into-bg">
                     <img
                       class="card-img-top"
-                      src="assets/img/person-02.jpg"
+                      src="assets/img/team/portraits/SE.png"
                       alt="Card image cap"
                     />
                   </div>
                   <div class="card-body">
-                    <h5 class="mb-1">Levi Masters</h5>
-                    <h6 class="ts-opacity__50">
-                      Investment Specialist
-                    </h6>
+                    <h5 class="mb-1">Sergelenbaatar Ganbaatar</h5>
+                    <h6 class="ts-opacity__50">Founder & CTO</h6>
                   </div>
                   <div class="card-footer bg-white">
                     <div class="ts-social-icons">
@@ -1067,13 +576,13 @@
                   <div class="ts-card__image ts-img-into-bg">
                     <img
                       class="card-img-top"
-                      src="assets/img/person-03.jpg"
+                      src="assets/img/team/portraits/UU.png"
                       alt="Card image cap"
                     />
                   </div>
                   <div class="card-body">
-                    <h5 class="mb-1">John Doe</h5>
-                    <h6 class="ts-opacity__50">Head Of Marketing</h6>
+                    <h5 class="mb-1">Uuuganbayar Tsetsegmaa</h5>
+                    <h6 class="ts-opacity__50">Head Of IT service</h6>
                   </div>
                   <div class="card-footer bg-white">
                     <div class="ts-social-icons">
@@ -1083,7 +592,9 @@
                       <a href="#">
                         <i class="fab fa-twitter"></i>
                       </a>
-                      <a href="#">
+                      <a
+                        href="https://www.linkedin.com/in/uuganbayar-tsetsgee-7b8573146/"
+                      >
                         <i class="fab fa-linkedin"></i>
                       </a>
                     </div>
@@ -1098,13 +609,13 @@
                   <div class="ts-card__image ts-img-into-bg">
                     <img
                       class="card-img-top"
-                      src="assets/img/person-04.jpg"
+                      src="assets/img/team/portraits/IV.png"
                       alt="Card image cap"
                     />
                   </div>
                   <div class="card-body">
-                    <h5 class="mb-1">Lisa Haley</h5>
-                    <h6 class="ts-opacity__50">Customer Support</h6>
+                    <h5 class="mb-1">Iveel Jargalsaikhan</h5>
+                    <h6 class="ts-opacity__50">Consultant</h6>
                   </div>
                   <div class="card-footer bg-white">
                     <div class="ts-social-icons">
@@ -1130,349 +641,6 @@
           <!--end container-->
         </section>
         <!--END OUR TEAM ****************************************************************************************-->
-
-        <!--GALLERY *********************************************************************************************-->
-        <section class="pb-0 block" id="gallery">
-          <div class="container">
-            <div class="ts-title">
-              <h2>Gallery</h2>
-            </div>
-            <!--end block-title-->
-          </div>
-          <!--end container-->
-
-          <div class="ts-gallery">
-            <div class="container-fluid px-0">
-              <div class="row no-gutters">
-                <div class="col-md-4">
-                  <a
-                    href="http://www.youtube.com/watch?v=0O2aH4XLbto"
-                    class="ts-gallery__image video-popup"
-                  >
-                    <div class="ts-gallery__caption">
-                      <span class="h3">
-                        <i class="fa fa-play-circle"></i>
-                      </span>
-                      <h5>Interior Design</h5>
-                      <h3 class="reveal">Bathroom Refresh</h3>
-                    </div>
-                    <div class="ts-img-into-bg">
-                      <img src="assets/img/img-01.jpg" alt="" />
-                    </div>
-                  </a>
-                  <!--end gallery__image-->
-                </div>
-                <!--end col-md-4-->
-                <div class="col-md-4">
-                  <a
-                    href="assets/img/img-02.jpg"
-                    class="ts-gallery__image popup-image"
-                  >
-                    <div class="ts-gallery__caption">
-                      <h5>Architecture</h5>
-                      <h3>Hills Apartment</h3>
-                    </div>
-                    <div class="ts-img-into-bg">
-                      <img src="assets/img/img-02.jpg" alt="" />
-                    </div>
-                  </a>
-                  <!--end gallery__image-->
-                </div>
-                <!--end col-md-4-->
-                <div class="col-md-4">
-                  <a
-                    href="assets/img/img-03.jpg"
-                    class="ts-gallery__image popup-image"
-                  >
-                    <div class="ts-gallery__caption">
-                      <h5>Branding</h5>
-                      <h3>Story Restaurant</h3>
-                    </div>
-                    <div class="ts-img-into-bg">
-                      <img src="assets/img/img-03.jpg" alt="" />
-                    </div>
-                  </a>
-                  <!--end gallery__image-->
-                </div>
-                <!--end col-md-4-->
-                <div class="col-md-4">
-                  <a
-                    href="assets/img/img-04.jpg"
-                    class="ts-gallery__image popup-image"
-                  >
-                    <div class="ts-gallery__caption">
-                      <h5>Industrial Design</h5>
-                      <h3>Room Furniture</h3>
-                    </div>
-                    <div class="ts-img-into-bg">
-                      <img src="assets/img/img-04.jpg" alt="" />
-                    </div>
-                  </a>
-                  <!--end gallery__image-->
-                </div>
-                <!--end col-md-4-->
-                <div class="col-md-4">
-                  <a
-                    href="assets/img/img-05.jpg"
-                    class="ts-gallery__image popup-image"
-                  >
-                    <div class="ts-gallery__caption">
-                      <h5>Branding</h5>
-                      <h3>Maracana Cups</h3>
-                    </div>
-                    <div class="ts-img-into-bg">
-                      <img src="assets/img/img-05.jpg" alt="" />
-                    </div>
-                  </a>
-                  <!--end gallery__image-->
-                </div>
-                <!--end col-md-4-->
-                <div class="col-md-4">
-                  <a
-                    href="assets/img/img-06.jpg"
-                    class="ts-gallery__image popup-image"
-                  >
-                    <div class="ts-gallery__caption">
-                      <h5>Art</h5>
-                      <h3>Timeless Motion</h3>
-                    </div>
-                    <div class="ts-img-into-bg">
-                      <img src="assets/img/img-06.jpg" alt="" />
-                    </div>
-                  </a>
-                  <!--end gallery__image-->
-                </div>
-                <!--end col-md-4-->
-              </div>
-              <!--end row-->
-            </div>
-            <!--end container-fluid-->
-          </div>
-          <!--end gallery-->
-        </section>
-        <!--end block-->
-        <!--END GALLERY *****************************************************************************************-->
-
-        <!--HAPPY CLIENTS ***************************************************************************************-->
-        <div id="happy-clients" class="ts-block">
-          <div class="container">
-            <div class="ts-title">
-              <h2>User Stories</h2>
-            </div>
-            <div
-              class="card-columns ts-column-count-sm-2 ts-column-count-md-2 ts-column-count-lg-3 ts-column-count-xl-4"
-            >
-              <div class="card" data-animate="ts-fadeInUp">
-                <div class="card-body">
-                  <div class="d-flex align-items-center">
-                    <figure
-                      class="ts-circle__xs ts-shadow__sm mr-3"
-                      data-bg-image="assets/img/person-sm-01.jpg"
-                    ></figure>
-                    <h5>Edward Montanez</h5>
-                  </div>
-                  <p class="mb-0">
-                    Morbi et nisl a sapien malesuada scelerisque.
-                    Suspendisse tempor turpis mattis nibh posuere.
-                    Aenean sagittis nisl. Sapien urna, sagittis a
-                    magna in, malesuada.
-                  </p>
-                </div>
-                <!--end card-body-->
-              </div>
-              <!--end card-->
-              <div
-                class="card"
-                data-animate="ts-fadeInUp"
-                data-delay=".2s"
-              >
-                <div class="card-body">
-                  <div class="d-flex align-items-center">
-                    <figure
-                      class="ts-circle__xs ts-shadow__sm mr-3"
-                      data-bg-image="assets/img/person-sm-02.jpg"
-                    ></figure>
-                    <h5>Anita Matthews</h5>
-                  </div>
-                  <p class="mb-0">
-                    Suspendisse tempor turpis mattis nibh posuere, in
-                    iaculis sem efficitur. Ut sapien urna, sagittis a
-                    magna in, malesuada ornare massa. Pellentesque id
-                    ligula est.
-                  </p>
-                </div>
-                <!--end card-body-->
-              </div>
-              <!--end card-->
-              <div
-                class="card"
-                data-animate="ts-fadeInUp"
-                data-delay=".3s"
-              >
-                <div class="card-body">
-                  <div class="d-flex align-items-center">
-                    <figure
-                      class="ts-circle__xs ts-shadow__sm mr-3"
-                      data-bg-image="assets/img/person-sm-03.jpg"
-                    ></figure>
-                    <h5>Lisa Haley</h5>
-                  </div>
-                  <p class="mb-0">
-                    Ut sapien urna, sagittis a magna in, malesuada
-                    ornare massa. Pellentesque id ligula est.
-                  </p>
-                </div>
-                <!--end card-body-->
-              </div>
-              <!--end card-->
-              <div
-                class="card"
-                data-animate="ts-fadeInUp"
-                data-delay=".4s"
-              >
-                <div class="card-body">
-                  <div class="d-flex align-items-center">
-                    <figure
-                      class="ts-circle__xs ts-shadow__sm mr-3"
-                      data-bg-image="assets/img/person-sm-04.jpg"
-                    ></figure>
-                    <h5>Levi Masters</h5>
-                  </div>
-                  <p class="mb-0">
-                    Phasellus in iaculis ante. Fusce odio justo,
-                    pulvinar sit amet nisl sed, lacinia laoreet augue.
-                    Integer eu ultrices lacus, at laoreet nunc.
-                    Pellentesque id
-                  </p>
-                </div>
-                <!--end card-body-->
-              </div>
-              <!--end card-->
-
-              <div
-                class="card"
-                data-animate="ts-fadeInUp"
-                data-delay=".5s"
-              >
-                <div class="card-body">
-                  <div class="d-flex align-items-center">
-                    <figure
-                      class="ts-circle__xs ts-shadow__sm mr-3"
-                      data-bg-image="assets/img/person-sm-05.jpg"
-                    ></figure>
-                    <h5>Tierra F. Lane</h5>
-                  </div>
-                  <p class="mb-0">
-                    Morbi et nisl a sapien malesuada scelerisque.
-                    Suspendisse tempor turpis mattis nibh posuere.
-                    Aenean sagittis nisl.
-                  </p>
-                </div>
-                <!--end card-body-->
-              </div>
-              <!--end card-->
-              <div
-                class="card"
-                data-animate="ts-fadeInUp"
-                data-delay=".6s"
-              >
-                <div class="card-body">
-                  <div class="d-flex align-items-center">
-                    <figure
-                      class="ts-circle__xs ts-shadow__sm mr-3"
-                      data-bg-image="assets/img/person-sm-06.jpg"
-                    ></figure>
-                    <h5>Harold Williamson</h5>
-                  </div>
-                  <p class="mb-0">
-                    Fusce tincidunt turpis a dui pulvinar venenatis.
-                    Sed elementum sollicitudin euismod. Phasellus
-                    elementum nunc ac quam gravida interdum. Ut vitae
-                    ex est. Suspendisse ut congue arcu. Cras sit amet
-                    condimentum arcu. Ut tortor odio, elementum quis
-                    tellus vel, finibus semper turpis. Nunc eget dui
-                    leo.
-                  </p>
-                </div>
-                <!--end card-body-->
-              </div>
-              <!--end card-->
-              <div
-                class="card"
-                data-animate="ts-fadeInUp"
-                data-delay=".7s"
-              >
-                <div class="card-body">
-                  <div class="d-flex align-items-center">
-                    <figure
-                      class="ts-circle__xs ts-shadow__sm mr-3"
-                      data-bg-image="assets/img/person-sm-07.jpg"
-                    ></figure>
-                    <h5>Anna Huynh</h5>
-                  </div>
-                  <p class="mb-0">
-                    Sed elementum sollicitudin euismod. Phasellus
-                    elementum nunc ac quam gravida interdum. Ut vitae
-                    ex est. Suspendisse ut congue arcu. Cras sit amet
-                    condimentum arcu.
-                  </p>
-                </div>
-                <!--end card-body-->
-              </div>
-              <!--end card-->
-              <div
-                class="card"
-                data-animate="ts-fadeInUp"
-                data-delay=".8s"
-              >
-                <div class="card-body">
-                  <div class="d-flex align-items-center">
-                    <figure
-                      class="ts-circle__xs ts-shadow__sm mr-3"
-                      data-bg-image="assets/img/person-sm-08.jpg"
-                    ></figure>
-                    <h5>Billy Ware</h5>
-                  </div>
-                  <p class="mb-0">
-                    Phasellus in iaculis ante. Fusce odio justo,
-                    pulvinar sit amet nisl sed, lacinia laoreet augue.
-                    Integer eu ultrices lacus, at laoreet nunc.
-                    Pellentesque id
-                  </p>
-                </div>
-                <!--end card-body-->
-              </div>
-              <!--end card-->
-            </div>
-            <!--end card-columns-->
-            <div class="text-center mt-5">
-              <a
-                href="#"
-                class="btn btn-outline-primary border-0"
-                data-bg-color="#ebf1fe"
-                >Show More</a
-              >
-            </div>
-          </div>
-          <!--end container-->
-        </div>
-        <!--END HAPPY CLIENTS ***********************************************************************************-->
-
-        <!--BUY NOW *********************************************************************************************-->
-        <section
-          id="buy-now"
-          class="ts-block text-center py-5"
-          data-bg-color="#fafafa"
-        >
-          <div class="container">
-            <div class="ts-title mb-3">
-              <h2 class="mb-0">Buy The FinWin Now!</h2>
-            </div>
-            <!--end ts-title-->
-            <a href="#" class="btn btn-primary">Buy Now!</a>
-          </div>
-        </section>
-        <!--END BUY NOW *****************************************************************************************-->
       </main>
       <!--end #content-->
 
@@ -1480,8 +648,36 @@
       <!--************ FOOTER *************************************************************************************-->
       <!--*********************************************************************************************************-->
       <footer id="ts-footer">
-        <div class="map ts-height__400px" id="map"></div>
-
+        <div class="mapouter">
+          <div class="gmap_canvas">
+            <iframe
+              class="gmap_iframe"
+              width="100%"
+              frameborder="0"
+              scrolling="no"
+              marginheight="0"
+              marginwidth="0"
+              src="https://maps.google.com/maps?width=1200&amp;height=400&amp;hl=en&amp;q=stu solution&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+            ></iframe>
+          </div>
+          <style>
+            .mapouter {
+              position: relative;
+              text-align: right;
+              width: 100%;
+              height: 400px;
+            }
+            .gmap_canvas {
+              overflow: hidden;
+              background: none !important;
+              width: 100%;
+              height: 400px;
+            }
+            .gmap_iframe {
+              height: 400px !important;
+            }
+          </style>
+        </div>
         <section
           id="contact"
           class="ts-separate-bg-element"
@@ -1496,22 +692,23 @@
             >
               <div class="row">
                 <div class="col-md-4">
-                  <h3>Contact Us</h3>
+                  <h3>Address</h3>
                   <address>
                     <figure>
-                      2590 Rocky Road Philadelphia, PA 19108
+                      #1103, UB Tower Office, 25th Khoroo, Bayanzurkh
+                      District, Ulaanbaatar, Mongolia
                     </figure>
                     <br />
                     <figure>
                       <div class="font-weight-bold">Email:</div>
-                      <a href="#">office@example.com</a>
+                      <a href="mailto:info@stusolution.mn"
+                        >info@stusolution.mn</a
+                      >
                     </figure>
                     <figure>
                       <div class="font-weight-bold">Phone:</div>
-                      +1 215-606-0391
+                      <a href="tel:+97677113881">(+976) 77113881</a>
                     </figure>
-                    <div class="font-weight-bold">Skype:</div>
-                    fin.win
                   </address>
                   <!--end address-->
                 </div>
@@ -1535,7 +732,7 @@
                             class="form-control"
                             id="form-contact-name"
                             name="name"
-                            placeholder="Your Name"
+                            placeholder="Name"
                             required
                           />
                         </div>
@@ -1552,7 +749,7 @@
                             class="form-control"
                             id="form-contact-email"
                             name="email"
-                            placeholder="Your Email"
+                            placeholder="Email"
                             required
                           />
                         </div>
@@ -1565,14 +762,14 @@
                       <div class="col-md-12">
                         <div class="form-group">
                           <label for="form-contact-message"
-                            >Your Message *</label
+                            >Your message *</label
                           >
                           <textarea
                             class="form-control"
                             id="form-contact-message"
                             rows="5"
                             name="message"
-                            placeholder="Your Message"
+                            placeholder="Message"
                             required
                           ></textarea>
                         </div>
@@ -1587,7 +784,7 @@
                         class="btn btn-primary float-right"
                         id="form-contact-submit"
                       >
-                        Send a Message
+                        Send
                       </button>
                     </div>
                     <!--end form-group -->
@@ -1600,7 +797,10 @@
             </div>
             <!--end ts-box-->
             <div class="text-center text-white py-4">
-              <small>© 2018 ThemeStarz, All Rights Reserved</small>
+              <small
+                >© 2023 "STU Finance". All rights reserved by STU
+                Solution LLC
+              </small>
             </div>
           </div>
           <!--end container-->
@@ -1624,5 +824,6 @@
     <script src="assets/js/jquery.validate.min.js"></script>
     <script src="assets/js/jquery-validate.bootstrap-tooltip.min.js"></script>
     <script src="assets/js/custom.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
   </body>
 </html>
