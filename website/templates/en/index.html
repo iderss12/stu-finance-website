@@ -26,6 +26,29 @@
     <link rel="stylesheet" href="assets/css/style.css" />
     <title>STU Finance</title>
     <link rel="icon" href="assets/img/stulogoTrans.png" />
+    <script>
+      document.addEventListener('contextmenu', (event) =>
+        event.preventDefault()
+      );
+
+      function ctrlShiftKey(event, keyCode) {
+        return (
+          event.ctrlKey &&
+          event.shiftKey &&
+          event.keyCode === keyCode.charCodeAt(0)
+        );
+      }
+      document.onkeydown = (event) => {
+        if (
+          event.keyCode === 123 ||
+          ctrlShiftKey(event, 'I') ||
+          ctrlShiftKey(event, 'J') ||
+          ctrlShiftKey(event, 'C')
+        )
+          return false;
+      };
+    </script>
+
     <style>
       .dropbtn {
         background-color: transparent;
